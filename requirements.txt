@@ -1,0 +1,8 @@
+streamlit
+requests
+folium
+pandas
+streamlit-components
+transformers
+torch
+huggingface_hub
