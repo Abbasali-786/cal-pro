@@ -1,8 +1,8 @@
-streamlit
-requests
-folium
-pandas
-streamlit-components
-transformers
-torch
-huggingface_hub
+streamlit==1.22.0
+requests==2.28.1
+folium==0.14.0
+pandas==1.5.3
+streamlit-components==0.0.1
+transformers==4.32.1
+torch==2.1.0
+huggingface_hub==0.14.1
