@@ -4,7 +4,6 @@ import time
 import folium
 from folium import plugins
 import pandas as pd
-from streamlit.components.v1 import html
 from transformers import pipeline
 from huggingface_hub import login
 
@@ -132,7 +131,7 @@ elif page == "Dangerous Area Map":
     st.markdown("🟥 High | 🟧 Medium | 🟩 Low")
 
     map_html = m._repr_html_()
-    html(map_html, height=500)
+    st.components.v1.html(map_html, height=500)
 
 # ORS Route Page (New Page)
 elif page == "ORS Route":
@@ -168,7 +167,7 @@ elif page == "ORS Route":
                 # Display the route map in the app
                 st.subheader("Calculated Route")
                 route_html = route_map._repr_html_()
-                html(route_html, height=500)
+                st.components.v1.html(route_html, height=500)
             else:
                 st.error(f"Error: {response.status_code}")
         else:
